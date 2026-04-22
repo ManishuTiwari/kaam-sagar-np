@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaam Sagar</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f8ff;
+      color: #222;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: #002b6b;
+      color: white;
+      padding: 18px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+    }
+
+    .logo {
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav-links a:hover {
+      color: #9fd3ff;
+    }
+
+    /* Hero */
+    .hero {
+      background: #054fb1;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: auto;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      background: rgb(0, 50, 116);
+      color: #ffffff;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    /* Section */
+    section {
+      padding: 60px 30px;
+      text-align: center;
+       scroll-margin-top: 100px;                              
+    }
+
+    h2 {                              
+      margin-bottom: 25px;
+      color: #002b6b;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      width: 280px;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      color: #0a4da3;
+      margin-bottom: 10px;
+    }
+
+    /* Login/Register Box */
+    .form-box {
+      max-width: 500px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.08);
+    }
+
+    input, select {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    /* Footer */
+    footer {
+      background: #002b6b;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">Kaam Sagar</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#login">Login</a></li>
+      <li><a href="#worker">Worker</a></li>
+      <li><a href="#giver">Work Giver</a></li>
+      <li><a href="#register">Register</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home -->
+  <section class="hero" id="home">
+    <p style="font-size: 75px;color:rgb(255, 255, 255) ;"><b>YOUR COMMUNITY'S</b></p>
+    <p style="font-size: 60px;color:rgb(250, 97, 41) ;"><b>WORK FORCE</b></p><br>
+    <h1>Find Part-Time Jobs Easily</h1>
+    <p>
+      A simple platform where workers and work givers connect quickly.
+    </p>
+    <button class="btn" style="background-color:white;color:blue">Get Started</button>
+  </section>
+
+  <!-- Categories -->
+  <section>
+    <h2>Work Categories</h2>
+    <div class="cards">
+      <div class="card"><h3>Plumber</h3><p>Rs. 1500/day (Negotiable)</p></div>
+      <div class="card"><h3>Carpenter</h3><p>Rs. 1800/day (Negotiable)</p></div>
+      <div class="card"><h3>Cleaner</h3><p>Rs. 1200/day (Negotiable)</p></div>
+      <div class="card"><h3>Tutor</h3><p>Rs. 1000/hour (Negotiable)</p></div>
+      <div class="card"><h3>Cook</h3><p>Rs. 2000/day (Negotiable)</p></div>
+      <div class="card"><h3>Mason</h3><p>Rs. 1700/day (Negotiable)</p></div>
+      <div class="card"><h3>Create</h3><p>Offer your price</p></div>
+    </div>
+  </section>
+
+  <!-- Login -->
+  <section id="login">
+    <h2>Login</h2>
+    <div class="form-box">
+      <select>
+        <option>Login as Worker</option>
+        <option>Login as Work Giver</option>
+      </select>
+      <input type="text" placeholder="Username">
+      <input type="password" placeholder="Password">
+      <input type="password" placeholder="Confirm Password">
+      <button class="btn">Login</button>
+    </div>
+  </section>
+
+  <!-- Worker Dashboard -->
+  <section id="worker">
+    <h2>Worker Dashboard</h2>
+    <div class="cards">
+      <div class="card"><h3>My Profile</h3><p>Update skills and experience</p></div>
+      <div class="card"><h3>Available Jobs</h3><p>Find nearby work offers</p></div>
+      <div class="card"><h3>Apply for Work</h3><p>Send requests to employers</p></div>
+      <div class="card"><h3>Price Negotiation</h3><p>Discuss payment amount</p></div>
+    </div>
+  </section>
+
+  <!-- Work Giver Dashboard -->
+  <section id="giver">
+    <h2>Work Giver Dashboard</h2>
+    <div class="cards">
+      <div class="card"><h3>Post a Job</h3><p>Add work details and location</p></div>
+      <div class="card"><h3>Find Workers</h3><p>View available workers</p></div>
+      <div class="card"><h3>Suggested Price</h3><p>System suggests fair pricing</p></div>
+      <div class="card"><h3>Final Negotiation</h3><p>Confirm final payment</p></div>
+    </div>
+  </section>
+
+  <!-- Register -->
+  <section id="register">
+    <h2>Register</h2>
+    <div class="form-box">
+      <input type="text" placeholder="Full Name">
+      <input type="email" placeholder="Email Address">
+      <input type="password" placeholder="Create Password">
+      <select>
+        <option>Register as Worker</option>
+        <option>Register as Work Giver</option>
+      </select>
+      <button class="btn">Register</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>Kaam Sagar © 2026 |  Part-Time Job Finder</p>
+  </footer>
+
+</body>
+</html>
